@@ -1,0 +1,2 @@
+#para que ignore la carpeta de los modulos de los repositorios
+/node_modules
