@@ -1,0 +1,16 @@
+{
+  "name": "usando_post",
+  "version": "0.0.1",
+  "description": "practica de como usar post ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "facundo espinosa",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "express": "^4.13.3",
+    "jade": "^1.11.0"
+  }
+}
