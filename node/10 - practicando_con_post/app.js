@@ -9,7 +9,7 @@ app.get("/",function(req,res){
 });
 
 app.get("/algo", function(req,res){
-  res.render("algo",{doctype:"html"})
+  res.render("algo",{doctype:"html"});
 });
 
 app.get("/algo/:nombre", function(req,res){
