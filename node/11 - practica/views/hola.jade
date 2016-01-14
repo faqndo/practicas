@@ -16,14 +16,13 @@ html
     .container
       .jumbotron.space-top.text-muted
         h1.display-3 Hola #{nombre}
-        p.lead Esto es una simple prueba usando lo apredido y un poco mas...
         hr.m-y-2
         p Espero que les halla gustado, para terminar te voy a dejar con algo de magia
-        form(action="/", method="POST")
+        form(action="/#{nombre}", method="POST")
           .input-group.input-group-lg
             input.form-control(
               type="text"
-              name="user"
+              name="userName"
               placeholder="ingresa tu nombre"
             )
           input.btn.btn-primary.space-top(

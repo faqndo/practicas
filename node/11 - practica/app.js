@@ -1,15 +1,25 @@
+//variables
 var express = require("express");
-
+var bodyParser = require("body-parser");
 var app = express();
 
+//view engine
 app.set("view engine", "jade");
 
-app.get("/:nombre", function(req,res){
-  res.render("index",{doctype: "html", nombre: req.params.nombre});
-});
-app.post('/:nombre', function(req,res){
-  res.render("index",{doctype: "html", nombre: req.params.nombre});
-});
+//uses
 app.use(express.static(__dirname + '/public'));
+app.use(bodyParser.urlencoded({extended:false}));
+app.use(bodyParser.text());
 
+//routes
+app.get("/", function(req,res){
+  var user = req.body.user;
+  res.render("index",{doctype: "html", nombre: user});
+});
+app.post("/", function(req,res){
+  var user = req.body.user;
+  res.render("index",{doctype: "html", nombre: user});
+});
+
+//port
 app.listen(8080);
