@@ -1,0 +1,19 @@
+{
+  "name": "conectando_mongo_y_haciendo_api_rest",
+  "version": "0.0.1",
+  "description": "haciendo api con mongo",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "facundo espinosa",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "express": "^4.13.3",
+    "mongoose": "^4.3.6"
+  },
+  "devDependencies": {
+    "nodemon": "^1.8.1"
+  }
+}
