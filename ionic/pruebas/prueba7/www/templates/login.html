@@ -1,0 +1,17 @@
+<ion-view view-title="Login">
+	<ion-content class="padding">
+    <div class="list">
+      <label class="item item-input">
+        <span class="input-label">Email</span>
+        <input type="email" ng-model="email">
+      </label>
+      <label class="item item-input">
+        <span class="input-label">Pass</span>
+        <input type="password" ng-model="password" ng-minlength="3">
+      </label>
+      <div class="padding">
+        <button ng-disabled="!email || !password" class="button button-block button-positive" ui-sref='register'>Identificarse</button>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
